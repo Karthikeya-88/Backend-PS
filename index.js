@@ -677,11 +677,11 @@ const books = [
   },
 ];
 
-app.get("/api/books", (req, res) => {
+app.get("/books", (req, res) => {
   res.status(200).json({ books });
 });
 
-app.get("/api/books/:id", (req, res) => {
+app.get("/books/:id", (req, res) => {
   const id = req.params.id;
   const book = books.find((book) => book.id === id);
   if (book) {
