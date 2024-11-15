@@ -1,1 +1,5 @@
-GET http://localhost:3000/books
+###
+GET http://localhost:3000/api/books
+
+###
+GET http://localhost:3000/api/books/28
