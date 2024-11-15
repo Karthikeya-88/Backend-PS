@@ -691,4 +691,7 @@ app.get("/api/books/:id", (req, res) => {
   }
 });
 
-module.exports = app;
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
